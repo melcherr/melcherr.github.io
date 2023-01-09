@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5 | Reinhold Melcher</title>
+    <link>https://melcherr.github.io/publication-type/5/</link>
+      <atom:link href="https://melcherr.github.io/publication-type/5/index.xml" rel="self" type="application/rss+xml" />
+    <description>5</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://melcherr.github.io/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_512x512_fill_lanczos_center_3.png</url>
+      <title>5</title>
+      <link>https://melcherr.github.io/publication-type/5/</link>
+    </image>
+    
+    <item>
+      <title>Rechts- und Linksextremismus in den deutschen Bundesländern</title>
+      <link>https://melcherr.github.io/publication/melcher-2022/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/publication/melcher-2022/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Der Zusammenhang zwischen politischer Versiertheit und Wahlentscheidungsqualität</title>
+      <link>https://melcherr.github.io/publication/melcher-/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/publication/melcher-/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Polizeidienst in Krisenzeiten: Beschäftigtenbefragung zur Corona-Pandemie in der Polizei Sachsen</title>
+      <link>https://melcherr.github.io/publication/meielbach-2021/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/publication/meielbach-2021/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
