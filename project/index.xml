@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Reinhold Melcher</title>
+    <title>Projects | Dr. Reinhold Melcher</title>
     <link>https://melcherr.github.io/project/</link>
       <atom:link href="https://melcherr.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
@@ -22,20 +22,20 @@
     </item>
     
     <item>
-      <title>Politisches &#34;Falschwissen&#34; und dessen Konsequenzen für Protestverhalten</title>
-      <link>https://melcherr.github.io/project/falschwissen/</link>
-      <pubDate>Sat, 14 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://melcherr.github.io/project/falschwissen/</guid>
-      <description>&lt;p&gt;Dass politisches Wissen ein wichtiger Bestimmungsfaktor politischen Partizipationsverhaltens in Demokratien ist, kann als mittlerweile gut gesicherter Befund der nationalen wie internationalen politischen Wissensforschung gelten. So beteiligen sich Bürgerinnen und Bürger mit soliden politischen Kenntnissen öfter an nationalen (Westle et al. 2015, S. 127-128) sowie europäischen Wahlen (Braun und Tausendpfund 2019, S. 230) und nutzen häufiger non-elektorale Partizipationsmöglichkeiten (Westle 2012, S. 61-62). Je mehr also eine Person über die politische Sphäre weiß, desto politisch aktiver ist sie auch. Doch gilt dies vielleicht auch für Bürgerinnen und Bürger, deren politisches Wissen überwiegend falsch ist? Partizipieren Personen auf Grundlage falscher Politikkenntnisse möglicherweise genauso häufig oder sogar mehr als politisch Versierte? Bisher existieren dazu nur wenige empirisch gesicherte Befunde. Das ist insofern überraschend, als durch das Aufkommen der sozialen Medien, in denen sich abseits der klassischen Gatekeeper Falschmeldungen und Verschwörungstheorien nahezu ungehindert verbreiten können, zwar auch das Niveau politischen Falschwissens in der Bevölkerung zunehmen könnte. Die Folgen für die Demokratie im Allgemeinen und politisches Verhalten im Besonderen bleiben aber angesichts des Forschungsstands bislang ungewiss. Der geplante Beitrag richtet sein Augenmerk auf diese Desiderate und stellt die Forschungsfrage in den Vordergrund, welchen Einfluss politisches Falschwissen auf die Neigung zu politischer Partizipation der Bürgerinnen und Bürger hat &amp;ndash; sowohl hinsichtlich der Beteiligungshäufigkeit insgesamt als auch differenziert nach unterschiedlichen Partizipationsmöglichkeiten. Konkret geht es um die Frage, worin sich Personen mit falschen politischen Kenntnissen von jenen mit korrektem Wissen bezüglich ihres Partizipations- und insbesondere Protestverhaltens unterscheiden. Vor diesem Hintergrund soll nicht nur ein theoretischer Beitrag geleistet werden, indem die Konsequenzen politischen Falschwissens im Verhältnis zu korrektem Wissen und Nichtwissen für das individuelle Partizipationsverhalten und die Demokratie als Ganzes herausgearbeitet werden. Vielmehr wird der Einfluss falscher Politikkenntnisse auf politisches Verhalten auch empirisch geprüft. Als Grundlage der Datenanalyse dient der ALLBUS 2018, der mit seinen umfangreichen Itembat-terien zum politischen Wissen und zur politischen Partizipation dafür hervorragende Möglichkeiten bietet.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Geographical Proximity and Cultural Closeness in Europe</title>
       <link>https://melcherr.github.io/project/distance/</link>
       <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://melcherr.github.io/project/distance/</guid>
       <description>&lt;p&gt;This paper addresses the important question of cultural closeness (or distance) between subnational regions in and aims to understand why certain regions are culturally closer than others. It makes a contribution by adapting the contact hypothesis to the phenomenon of cultural closeness and exemplifying a mechanism called &lt;em&gt;cultural blending&lt;/em&gt;. It argues that a high of contact between regions leads to cultural blending. Accordingly, interregional distance is assumed to be influenced by interregional contact frequency. We operationalize contact frequency by means of geographical proximity and culture via the value instrument developed by Shalom Schwartz. Using data drawn from the European Social Survey (2002&amp;ndash;2018) and Eurostat dyadic regressions on the NUTS-II-level are conducted. Findings show that the geographical distance between subnational regions is undoubtedly associated with interregional cultural distances.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Politisches &#34;Falschwissen&#34; und dessen Konsequenzen für Protestverhalten</title>
+      <link>https://melcherr.github.io/project/falschwissen/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/project/falschwissen/</guid>
+      <description>&lt;p&gt;Dass politisches Wissen ein wichtiger Bestimmungsfaktor politischen Partizipationsverhaltens in Demokratien ist, kann als mittlerweile gut gesicherter Befund der nationalen wie internationalen politischen Wissensforschung gelten. So beteiligen sich Bürgerinnen und Bürger mit soliden politischen Kenntnissen öfter an nationalen (Westle et al. 2015, S. 127-128) sowie europäischen Wahlen (Braun und Tausendpfund 2019, S. 230) und nutzen häufiger non-elektorale Partizipationsmöglichkeiten (Westle 2012, S. 61-62). Je mehr also eine Person über die politische Sphäre weiß, desto politisch aktiver ist sie auch. Doch gilt dies vielleicht auch für Bürgerinnen und Bürger, deren politisches Wissen überwiegend falsch ist? Partizipieren Personen auf Grundlage falscher Politikkenntnisse möglicherweise genauso häufig oder sogar mehr als politisch Versierte? Bisher existieren dazu nur wenige empirisch gesicherte Befunde. Das ist insofern überraschend, als durch das Aufkommen der sozialen Medien, in denen sich abseits der klassischen Gatekeeper Falschmeldungen und Verschwörungstheorien nahezu ungehindert verbreiten können, zwar auch das Niveau politischen Falschwissens in der Bevölkerung zunehmen könnte. Die Folgen für die Demokratie im Allgemeinen und politisches Verhalten im Besonderen bleiben aber angesichts des Forschungsstands bislang ungewiss. Der geplante Beitrag richtet sein Augenmerk auf diese Desiderate und stellt die Forschungsfrage in den Vordergrund, welchen Einfluss politisches Falschwissen auf die Neigung zu politischer Partizipation der Bürgerinnen und Bürger hat &amp;ndash; sowohl hinsichtlich der Beteiligungshäufigkeit insgesamt als auch differenziert nach unterschiedlichen Partizipationsmöglichkeiten. Konkret geht es um die Frage, worin sich Personen mit falschen politischen Kenntnissen von jenen mit korrektem Wissen bezüglich ihres Partizipations- und insbesondere Protestverhaltens unterscheiden. Vor diesem Hintergrund soll nicht nur ein theoretischer Beitrag geleistet werden, indem die Konsequenzen politischen Falschwissens im Verhältnis zu korrektem Wissen und Nichtwissen für das individuelle Partizipationsverhalten und die Demokratie als Ganzes herausgearbeitet werden. Vielmehr wird der Einfluss falscher Politikkenntnisse auf politisches Verhalten auch empirisch geprüft. Als Grundlage der Datenanalyse dient der ALLBUS 2018, der mit seinen umfangreichen Itembat-terien zum politischen Wissen und zur politischen Partizipation dafür hervorragende Möglichkeiten bietet.&lt;/p&gt;
 </description>
     </item>
     
