@@ -1,0 +1,1618 @@
+<!DOCTYPE html>
+<!-- This site was created with Wowchemy. https://www.wowchemy.com -->
+<!-- Last Published: February 28, 2023 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.7.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro:wght@200;300;400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Source+Sans+Pro:wght@200;300;400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.16f785cdb553c8c4431db6775122af35.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.c48817fc9bb4e59ae8b87007285384fb.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+  <meta name="google-site-verification" content="d_N4pxHkVYGGbrB26ZFecQyKDd0h6xeKpPSq3enXkIc" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Dr. Reinhold Melcher" />
+
+
+
+
+
+  
+
+<meta name="description" content="Load Python Libraries and Functions import os import pandas import geopandas import matplotlib.pyplot as plt from matplotlib import gridspec import warnings import subprocess warnings.filterwarnings(&#34;ignore&#34;) exec(open(&#34;Skripte/Python_01_Functions_WPZ.py&#34;).read()) Load and Transform Crime Data Read data into geopandas dataframe db = pandas." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://melcherr.github.io/jupyter_wpc/" />
+<link rel="canonical" href="https://melcherr.github.io/jupyter_wpc/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#003C5F" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://melcherr.github.io/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_512x512_fill_lanczos_center_3.png" />
+<meta property="og:site_name" content="Dr. Reinhold Melcher" />
+<meta property="og:url" content="https://melcherr.github.io/jupyter_wpc/" />
+<meta property="og:title" content="Jupyter Notebook: &#34;Then they simply go somewhere else...&#34; | Dr. Reinhold Melcher" />
+<meta property="og:description" content="Load Python Libraries and Functions import os import pandas import geopandas import matplotlib.pyplot as plt from matplotlib import gridspec import warnings import subprocess warnings.filterwarnings(&#34;ignore&#34;) exec(open(&#34;Skripte/Python_01_Functions_WPZ.py&#34;).read()) Load and Transform Crime Data Read data into geopandas dataframe db = pandas." /><meta property="og:image" content="https://melcherr.github.io/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2023-01-16T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2023-01-16T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Jupyter Notebook: &#34;Then they simply go somewhere else...&#34; | Dr. Reinhold Melcher</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="6b31dc21b69feaf20344ab2a282297eb" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.253edc45b3a8a047e59a8677cf8e2715.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Dr. Reinhold Melcher</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Dr. Reinhold Melcher</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#cv"><span>Curriculum Vitae</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#recent"><span>Publications & Data</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#current"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          Jupyter Notebook: "Then they simply go somewhere else..."
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#load-python-libraries-and-functions">Load Python Libraries and Functions</a></li>
+    <li><a href="#load-and-transform-crime-data">Load and Transform Crime Data</a>
+      <ul>
+        <li><a href="#read-data-into-geopandas-dataframe">Read data into geopandas dataframe</a></li>
+        <li><a href="#set-coordinate-reference-system-crs-to-wgs-84--pseudo-mercator">Set coordinate reference system (CRS) to WGS 84 / Pseudo-Mercator</a></li>
+        <li><a href="#read-in-weapon-prohibition-zone-bounding-coordinates">Read in weapon prohibition zone bounding coordinates</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-density-based-analysis">(1) Density based analysis</a>
+      <ul>
+        <li><a href="#total-police-recorded-crimes">Total police-recorded crimes</a></li>
+        <li><a href="#different-criminal-offenses">Different Criminal Offenses</a></li>
+      </ul>
+    </li>
+    <li><a href="#2-hotspot-analysis-using-morans-i-cluster-maps">(2) Hotspot analysis using Morans I cluster maps</a>
+      <ul>
+        <li><a href="#preparations">Preparations</a></li>
+        <li><a href="#hot-and-cold-spots-6-month-comparison">Hot and Cold Spots 6-month Comparison</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-trend-analysis-of-hotspots">(3) Trend Analysis of Hotspots</a>
+      <ul>
+        <li><a href="#preparations-1">Preparations</a></li>
+        <li><a href="#monthly-trend-analysis-of-hot--and-coldspots">Monthly Trend Analysis of Hot- and Coldspots</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-key-findings">(4) Key findings</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+      </div>
+
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Jupyter Notebook: &#34;Then they simply go somewhere else...&#34;</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <h2 id="load-python-libraries-and-functions">Load Python Libraries and Functions</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">geopandas</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">gridspec</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">warnings</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">subprocess</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&#34;ignore&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">exec</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&#34;Skripte/Python_01_Functions_WPZ.py&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span></code></pre></div><h2 id="load-and-transform-crime-data">Load and Transform Crime Data</h2>
+<h3 id="read-data-into-geopandas-dataframe">Read data into geopandas dataframe</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">db</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Daten/Straftaten.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="n">geopandas</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">long</span><span class="p">,</span> <span class="n">db</span><span class="o">.</span><span class="n">lat</span><span class="p">),</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&#34;epsg:4326&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="set-coordinate-reference-system-crs-to-wgs-84--pseudo-mercator">Set coordinate reference system (CRS) to WGS 84 / Pseudo-Mercator</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">db</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">3857</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="p">[</span><span class="s1">&#39;long&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="read-in-weapon-prohibition-zone-bounding-coordinates">Read in weapon prohibition zone bounding coordinates</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Daten/WVZ_Eckpunkte.csv&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">wvz_polygon</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="n">geopandas</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">wvz_polygon</span><span class="o">.</span><span class="n">lon</span><span class="p">,</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">lat</span><span class="p">),</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&#34;epsg:4326&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">3857</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">wvz_polygon</span><span class="p">[[</span><span class="s1">&#39;lon&#39;</span><span class="p">,</span> <span class="s1">&#39;lat&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
+</span></span></code></pre></div><h2 id="1-density-based-analysis">(1) Density based analysis</h2>
+<h3 id="total-police-recorded-crimes">Total police-recorded crimes</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">db</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">date</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="p">[</span><span class="s2">&#34;year&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
+</span></span><span class="line"><span class="cl"><span class="n">db</span><span class="p">[</span><span class="s2">&#34;wvz&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="s1">&#39;date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="s1">&#39;before wpz&#39;</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="s2">&#34;2018-11-05&#34;</span><span class="p">)</span> <span class="k">else</span> <span class="s1">&#39;after wpz&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="total-police-recorded-crimes-by-year">Total police-recorded crimes by year</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">db</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">&#34;year&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">pks_crime</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
+</span></span></code></pre></div><pre><code>year
+2016    5128
+2017    4789
+2018    5262
+2019    5275
+2020    4156
+Name: pks_crime, dtype: int64
+</code></pre>
+<h4 id="density-of-total-police-recorded-crimes-before-and-after-wpz-implementation">Density of total police-recorded crimes before and after WPZ implementation</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">22</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Total Police-Recorded Crimes&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontsize</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">x</span><span class="o">=</span><span class="mf">0.094</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db</span><span class="p">[</span><span class="n">db</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;before wpz&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Before WPZ implementation&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db</span><span class="p">[</span><span class="n">db</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;after wpz&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;After WPZ implementation&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_13_1_hu4235081544bc73c6ad6eefccf2e06ee0_2238848_32eb1770f71889647a285a6323567a3e.webp 400w,
+               /jupyter_wpc/output_13_1_hu4235081544bc73c6ad6eefccf2e06ee0_2238848_f56dca9222947540b9b9cfd1e7033713.webp 760w,
+               /jupyter_wpc/output_13_1_hu4235081544bc73c6ad6eefccf2e06ee0_2238848_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_13_1_hu4235081544bc73c6ad6eefccf2e06ee0_2238848_32eb1770f71889647a285a6323567a3e.webp"
+               width="620"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="different-criminal-offenses">Different Criminal Offenses</h3>
+<h4 id="types-of-recorded-crimes">Types of recorded crimes</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">db</span><span class="o">.</span><span class="n">pks_crime</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">!=</span> <span class="s1">&#39;nan&#39;</span><span class="p">]</span>
+</span></span></code></pre></div><pre><code>['Sonstige Straftatbestände (StGB)',
+ 'Sonstiger schwerer Diebstahl insgesamt §§ 243 - 244a StGB',
+ 'Rohheitsdelikte und Straftaten gegen die persönliche Freiheit',
+ 'Vermögens- und Fälschungsdelikte',
+ 'Sonstiger einfacher Diebstahl §§ 242, 247, 248a-c StGB',
+ 'Strafrechtliche Nebengesetze',
+ 'Straftaten gegen das Leben',
+ 'Straftaten gegen die sexuelle Selbstbestimmung insgesamt']
+</code></pre>
+<h4 id="subset-dataset-by-violent-offenses-and-theft">Subset dataset by violent offenses and theft</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">db_theft</span> <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="n">db</span><span class="o">.</span><span class="n">pks_crime</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s2">&#34;Sonstiger einfacher Diebstahl §§ 242, 247, 248a-c StGB&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                 <span class="s2">&#34;Sonstiger schwerer Diebstahl insgesamt §§ 243 - 244a StGB&#34;</span><span class="p">])]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">db_violence</span> <span class="o">=</span> <span class="n">db</span><span class="p">[</span><span class="n">db</span><span class="o">.</span><span class="n">pks_crime</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s1">&#39;Straftaten gegen das Leben&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                                    <span class="s1">&#39;Rohheitsdelikte und Straftaten gegen die persönliche Freiheit&#39;</span><span class="p">])]</span>
+</span></span></code></pre></div><h4 id="density-of-violent-crimes-before-and-after-wpz-implementation">Density of violent crimes before and after WPZ implementation</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">22</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Police-Recorded Violent Crimes&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontsize</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">x</span><span class="o">=</span><span class="mf">0.094</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db_violence</span><span class="p">[</span><span class="n">db_violence</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;before wpz&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Before WPZ implementation&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db_violence</span><span class="p">[</span><span class="n">db_violence</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;after wpz&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;After WPZ implementation&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_20_1_hu2fd6a761e3926da20d5e508f9a29e3fd_2279706_08ba9f76127ae416f1a743f3b8f513eb.webp 400w,
+               /jupyter_wpc/output_20_1_hu2fd6a761e3926da20d5e508f9a29e3fd_2279706_141155f0864be70b018ef8b83b843967.webp 760w,
+               /jupyter_wpc/output_20_1_hu2fd6a761e3926da20d5e508f9a29e3fd_2279706_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_20_1_hu2fd6a761e3926da20d5e508f9a29e3fd_2279706_08ba9f76127ae416f1a743f3b8f513eb.webp"
+               width="620"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h4 id="density-of-petty-and-grand-theft-before-and-after-wpz-implementation">Density of petty and grand theft before and after WPZ implementation</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">22</span><span class="p">,</span> <span class="mi">22</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Police-Recorded Petty and Grand Theft&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontsize</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">x</span><span class="o">=</span><span class="mf">0.094</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db_theft</span><span class="p">[</span><span class="n">db_theft</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;before wpz&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Before WPZ implementation&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db_theft</span><span class="p">[</span><span class="n">db_theft</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;after wpz&#39;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;After WPZ implementation&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_22_1_hu08045a92eb4d644c09f78c72c722eb30_2280488_1f1f3a3e4917ceb001e4aac388713d50.webp 400w,
+               /jupyter_wpc/output_22_1_hu08045a92eb4d644c09f78c72c722eb30_2280488_aef86ecbcbbc048dbb52b408658080b1.webp 760w,
+               /jupyter_wpc/output_22_1_hu08045a92eb4d644c09f78c72c722eb30_2280488_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_22_1_hu08045a92eb4d644c09f78c72c722eb30_2280488_1f1f3a3e4917ceb001e4aac388713d50.webp"
+               width="620"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="2-hotspot-analysis-using-morans-i-cluster-maps">(2) Hotspot analysis using Morans I cluster maps</h2>
+<h3 id="preparations">Preparations</h3>
+<h4 id="create-hexagonal-grid-overlay">Create hexagonal grid overlay</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">grid_data</span> <span class="o">=</span> <span class="n">create_grid</span><span class="p">(</span><span class="n">feature</span><span class="o">=</span><span class="n">db</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">shape</span><span class="o">=</span><span class="s2">&#34;hexagon&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">side_length</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">grid_data</span><span class="p">[</span><span class="s2">&#34;wvz&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">geopandas</span><span class="o">.</span><span class="n">GeoSeries</span><span class="p">(</span><span class="n">Polygon</span><span class="p">(</span><span class="n">wvz_polygon</span><span class="p">))</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">item</span><span class="p">()</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">grid_data</span><span class="o">.</span><span class="n">geometry</span><span class="p">]</span>
+</span></span></code></pre></div><h4 id="define-export-values">Define export values</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">export_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">db</span><span class="p">,</span> <span class="n">db_theft</span><span class="p">,</span> <span class="n">db_violence</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">export_file</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;Total&#34;</span><span class="p">,</span> <span class="s2">&#34;Theft&#34;</span><span class="p">,</span> <span class="s2">&#34;Violence&#34;</span><span class="p">]</span>
+</span></span></code></pre></div><h4 id="export-grid-data-and-run-r-script-to-calculate-morans-local-i">Export grid data and run R script to calculate Morans Local I</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">export_grid</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">export_data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">grid_data</span><span class="o">=</span><span class="n">grid_data</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">filename</span><span class="o">=</span><span class="n">export_file</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&#34;C:/Program Files/R/R-4.2.2/bin/Rscript&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;E:/Documents/Publikationen/Work-in-Progress/Anschlussforschung WZV/Datenanalyse/Skripte/R_02_Export_Hotspot_Analysis.R&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="load-processed-data">Load processed data</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">hotspots_data_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s2">&#34;Daten/02_Hotspots_final&#34;</span><span class="p">)</span> <span class="k">if</span> <span class="s2">&#34;.shp&#34;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">hotspot_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">geopandas</span><span class="o">.</span><span class="n">read_file</span><span class="p">(</span><span class="s2">&#34;Daten/02_Hotspots_final/&#34;</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">hotspots_data_names</span><span class="p">]</span>
+</span></span></code></pre></div><h3 id="hot-and-cold-spots-6-month-comparison">Hot and Cold Spots 6-month Comparison</h3>
+<h4 id="total-police-recored-crimes">Total police-recored crimes</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="mf">22.4</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Hot and Cold Spots of Total Police-recored Crimes&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontsize</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">x</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_32_1_hu98bc99a7dce08b6f27454a9c28ced8f0_3999050_be9442cefb84423b39966a066c333cab.webp 400w,
+               /jupyter_wpc/output_32_1_hu98bc99a7dce08b6f27454a9c28ced8f0_3999050_0fa3a19a3522eac2f168116dc70f9311.webp 760w,
+               /jupyter_wpc/output_32_1_hu98bc99a7dce08b6f27454a9c28ced8f0_3999050_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_32_1_hu98bc99a7dce08b6f27454a9c28ced8f0_3999050_be9442cefb84423b39966a066c333cab.webp"
+               width="760"
+               height="472"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h4 id="violent-crimes">Violent crimes</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="mf">22.4</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Hot and Cold Spots of Violence&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontsize</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">x</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_34_1_hufc5ad7ff9ba35d8b48f22c3da92d6bc4_3983146_79add588eefc1dbee7bea64a71883b86.webp 400w,
+               /jupyter_wpc/output_34_1_hufc5ad7ff9ba35d8b48f22c3da92d6bc4_3983146_5af73a49e21119e3f114486d9a42262b.webp 760w,
+               /jupyter_wpc/output_34_1_hufc5ad7ff9ba35d8b48f22c3da92d6bc4_3983146_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_34_1_hufc5ad7ff9ba35d8b48f22c3da92d6bc4_3983146_79add588eefc1dbee7bea64a71883b86.webp"
+               width="760"
+               height="472"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h4 id="petty-and-grand-theft">Petty and Grand theft</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">36</span><span class="p">,</span> <span class="mf">22.4</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">fig</span><span class="o">.</span><span class="n">suptitle</span><span class="p">(</span><span class="s1">&#39;Hot and Cold Spots of Petty and Grand theft&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontsize</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">x</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ax_4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_36_1_huadfa275f8057a7b6bac987becf98db8e_3998358_e59252c6c0d1f6d6b78db6c2477584fc.webp 400w,
+               /jupyter_wpc/output_36_1_huadfa275f8057a7b6bac987becf98db8e_3998358_8090f3dc33d49bf9651a77e265a94bbb.webp 760w,
+               /jupyter_wpc/output_36_1_huadfa275f8057a7b6bac987becf98db8e_3998358_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_36_1_huadfa275f8057a7b6bac987becf98db8e_3998358_e59252c6c0d1f6d6b78db6c2477584fc.webp"
+               width="760"
+               height="472"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="3-trend-analysis-of-hotspots">(3) Trend Analysis of Hotspots</h2>
+<h3 id="preparations-1">Preparations</h3>
+<h4 id="export-grid-data-and-run-r-script-to-calculate-morans-local-i-monthly">Export grid data and run R script to calculate Morans Local I (monthly)</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">before_month</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s2">&#34;2016-11-05&#34;</span><span class="p">,</span> <span class="s2">&#34;2018-11-05&#34;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">after_month</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s2">&#34;2018-11-05&#34;</span><span class="p">,</span> <span class="s2">&#34;2020-11-05&#34;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;M&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">label_month</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;_&#34;</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s2">02d</span><span class="si">}</span><span class="s2">&#34;</span> <span class="o">+</span> <span class="s2">&#34;_month&#34;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">25</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">export_grid</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">export_data</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">grid_data</span><span class="o">=</span><span class="n">grid_data</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">before</span><span class="o">=</span><span class="n">before_month</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">after</span><span class="o">=</span><span class="n">after_month</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">label</span><span class="o">=</span><span class="n">label_month</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">filename</span><span class="o">=</span><span class="n">export_file</span><span class="p">[</span><span class="n">i</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">folder</span><span class="o">=</span><span class="s2">&#34;03_Hotspots_month_raw&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&#34;C:/Program Files/R/R-4.2.2/bin/Rscript&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;E:/Documents/Publikationen/Work-in-Progress/Anschlussforschung WZV/Datenanalyse/Skripte/R_03_Export_Hotspot_Month_Analysis.R&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="load-processed-data-1">Load processed data</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">hotspots_data_names_month</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s2">&#34;Daten/04_Hotspots_month_final&#34;</span><span class="p">)</span> <span class="k">if</span> <span class="s2">&#34;.csv&#34;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">hotspots_data_month</span> <span class="o">=</span> <span class="p">[</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;Daten/04_Hotspots_month_final/&#34;</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">hotspots_data_names_month</span><span class="p">]</span>
+</span></span></code></pre></div><h3 id="monthly-trend-analysis-of-hot--and-coldspots">Monthly Trend Analysis of Hot- and Coldspots</h3>
+<h4 id="total-police-recored-crimes-1">Total police-recored crimes</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">hotspots_data_month</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;month&#34;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&#34;cluster_group&#34;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&#34;ratio_roll&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_trend</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Trend Analysis of Total Police-Recored Crimes&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_42_0_hu8f5b0e7be7b49137d6d6ad367b57c70a_40728_8a1e001d37d7075f99ac9154c6ed223b.webp 400w,
+               /jupyter_wpc/output_42_0_hu8f5b0e7be7b49137d6d6ad367b57c70a_40728_21e27068a80be55e86b2122ed67493ba.webp 760w,
+               /jupyter_wpc/output_42_0_hu8f5b0e7be7b49137d6d6ad367b57c70a_40728_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_42_0_hu8f5b0e7be7b49137d6d6ad367b57c70a_40728_8a1e001d37d7075f99ac9154c6ed223b.webp"
+               width="760"
+               height="520"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h4 id="violent-crimes-1">Violent crimes</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">hotspots_data_month</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;month&#34;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&#34;cluster_group&#34;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&#34;ratio_roll&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_trend</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Trend Analysis of Violent Crimes&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_44_0_hu12e9d600f31d78b0fe2db2f33305bb4f_41844_27312318556ea31eb75019f8ea319239.webp 400w,
+               /jupyter_wpc/output_44_0_hu12e9d600f31d78b0fe2db2f33305bb4f_41844_9b06c79818e8bc7afe1691e75a785bb5.webp 760w,
+               /jupyter_wpc/output_44_0_hu12e9d600f31d78b0fe2db2f33305bb4f_41844_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_44_0_hu12e9d600f31d78b0fe2db2f33305bb4f_41844_27312318556ea31eb75019f8ea319239.webp"
+               width="760"
+               height="520"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h4 id="petty-and-grand-theft-1">Petty and grand theft</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">hotspots_data_month</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;month&#34;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&#34;cluster_group&#34;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&#34;ratio_roll&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_trend</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Trend Analysis of Petty and Grand Theft&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="png" srcset="
+               /jupyter_wpc/output_46_0_hu16b62ae297731bca389f1ae89ee42afb_37974_5bc46c102ef1db57303e700339a05e19.webp 400w,
+               /jupyter_wpc/output_46_0_hu16b62ae297731bca389f1ae89ee42afb_37974_97647a8f323f6d6c6c9bc475cf25525c.webp 760w,
+               /jupyter_wpc/output_46_0_hu16b62ae297731bca389f1ae89ee42afb_37974_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/jupyter_wpc/output_46_0_hu16b62ae297731bca389f1ae89ee42afb_37974_5bc46c102ef1db57303e700339a05e19.webp"
+               width="760"
+               height="516"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="4-key-findings">(4) Key findings</h2>
+<h4 id="1-crime-displacement-took-place">1. Crime displacement took place</h4>
+<ul>
+<li>This is true for the total of police-recorded crimes as well as violence and theft</li>
+<li>However, the Eisenbahnstraße and surrounding area remain the biggest crime hotspots even after WPZ implementation</li>
+</ul>
+<h4 id="2-displacement-effect-differs-between-types-of-crimes-and-offenses">2. Displacement effect differs between types of crimes and offenses</h4>
+<ul>
+<li>Total of police-recorded crimes:
+<ul>
+<li>crime inside the WPZ decreased for the first 6 month after implementation</li>
+<li>strong rebound effect after the first 6 month, crime inside WPZ increased sharply</li>
+<li>crime outside the WPZ reached an equilibrium between hot and coldspots after 12 month</li>
+</ul>
+</li>
+<li>Violence:
+<ul>
+<li>very similar to development of total crimes regarding hot and coldspots inside the WPZ</li>
+<li>violence hotspots outside the WPZ remain even two years after WPZ implementation</li>
+</ul>
+</li>
+<li>Grand and petty theft:
+<ul>
+<li>strong reduction of theft inside the WPZ</li>
+<li>sharp increase of new hotspots outside the WPZ</li>
+<li>pattern solidifies over time</li>
+</ul>
+</li>
+</ul>
+
+
+        </article>
+
+        
+
+
+
+
+
+        
+
+
+
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on Jan 16, 2023</p>
+
+        
+
+
+
+
+        
+
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+<p class="powered-by">
+  
+  <a href="/privacy/">Privacy Policy</a>
+  
+  
+   &middot; 
+  <a href="/terms/">Terms</a>
+  
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Reinhold Melcher. Inspired by <a href="https://matteocourthoud.github.io/post/website/">this</a> Post.
+  </p>
+  
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.e8ee06ba8371980ffde659871dd593b0.js"></script>
+
+
+
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
