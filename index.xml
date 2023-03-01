@@ -172,11 +172,12 @@ vertical-align:top}
     </item>
     
     <item>
-      <title>Jupyter Notebook: &#34;Then they simply go somewhere else...&#34;</title>
+      <title>Preliminary Results</title>
       <link>https://melcherr.github.io/jupyter_wpc/</link>
       <pubDate>Mon, 16 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://melcherr.github.io/jupyter_wpc/</guid>
-      <description>&lt;h2 id=&#34;load-python-libraries-and-functions&#34;&gt;Load Python Libraries and Functions&lt;/h2&gt;
+      <description>&lt;p&gt;&amp;ldquo;Then they simply go somewhere else&amp;hellip;&amp;rdquo;: An Exploratory Study of Crime Displacement in a German Context&lt;/p&gt;
+&lt;h2 id=&#34;load-python-libraries-and-functions&#34;&gt;Load Python Libraries and Functions&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;os&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;pandas&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;geopandas&lt;/span&gt;
