@@ -212,7 +212,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.6e905b20a76fb3594f3722bc5961ed68.css" />
+  <link rel="stylesheet" href="/css/wowchemy.f3d02e6689b8a6f6ca54229392dc723e.css" />
 
   
   
@@ -751,29 +751,29 @@ Load Python Libraries and Functions import os import pandas import geopandas imp
     <li><a href="#load-and-transform-crime-data">Load and Transform Crime Data</a>
       <ul>
         <li><a href="#read-data-into-geopandas-dataframe">Read data into geopandas dataframe</a></li>
-        <li><a href="#set-coordinate-reference-system-crs-to-wgs-84--pseudo-mercator">Set coordinate reference system (CRS) to WGS 84 / Pseudo-Mercator</a></li>
-        <li><a href="#read-in-weapon-prohibition-zone-bounding-coordinates">Read in weapon prohibition zone bounding coordinates</a></li>
+        <li><a href="#set-coordinate-reference-system-to-wgs-84">Set coordinate reference system to WGS 84</a></li>
+        <li><a href="#read-in-wpz-bounding-coordinates">Read in WPZ bounding coordinates</a></li>
       </ul>
     </li>
-    <li><a href="#1-density-based-analysis">(1) Density based analysis</a>
+    <li><a href="#density-based-analysis">Density Based Analysis</a>
       <ul>
         <li><a href="#total-police-recorded-crimes">Total police-recorded crimes</a></li>
         <li><a href="#different-criminal-offenses">Different Criminal Offenses</a></li>
       </ul>
     </li>
-    <li><a href="#2-hotspot-analysis-using-morans-i-cluster-maps">(2) Hotspot analysis using Morans I cluster maps</a>
+    <li><a href="#hotspot-analysis-using-morans-i-cluster-maps">Hotspot Analysis using Morans I Cluster Maps</a>
       <ul>
         <li><a href="#preparations">Preparations</a></li>
         <li><a href="#hot-and-cold-spots-6-month-comparison">Hot and Cold Spots 6-month Comparison</a></li>
       </ul>
     </li>
-    <li><a href="#3-trend-analysis-of-hotspots">(3) Trend Analysis of Hotspots</a>
+    <li><a href="#trend-analysis-of-hotspot-and-coldspots">Trend Analysis of Hotspot and Coldspots</a>
       <ul>
         <li><a href="#preparations-1">Preparations</a></li>
-        <li><a href="#monthly-trend-analysis-of-hot--and-coldspots">Monthly Trend Analysis of Hot- and Coldspots</a></li>
+        <li><a href="#monthly-trend-analysis">Monthly Trend Analysis</a></li>
       </ul>
     </li>
-    <li><a href="#4-key-findings">(4) Key findings</a>
+    <li><a href="#key-findings">Key Findings</a>
       <ul>
         <li></li>
       </ul>
@@ -815,7 +815,7 @@ Load Python Libraries and Functions import os import pandas import geopandas imp
           
           
 
-          <p>&ldquo;Then they simply go somewhere else&hellip;&rdquo;: An Exploratory Study of Crime Displacement in a German Context</p>
+          <p><font size="5" color="grey">&ldquo;Then they simply go somewhere else&hellip;&rdquo;: An Exploratory Study of Crime Displacement in a German Context</font></p>
 <h2 id="load-python-libraries-and-functions">Load Python Libraries and Functions</h2>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span>
@@ -831,19 +831,23 @@ Load Python Libraries and Functions import os import pandas import geopandas imp
 </span></span></code></pre></div><h2 id="load-and-transform-crime-data">Load and Transform Crime Data</h2>
 <h3 id="read-data-into-geopandas-dataframe">Read data into geopandas dataframe</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">db</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Daten/Straftaten.csv&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">db</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="n">geopandas</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">long</span><span class="p">,</span> <span class="n">db</span><span class="o">.</span><span class="n">lat</span><span class="p">),</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&#34;epsg:4326&#34;</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="set-coordinate-reference-system-crs-to-wgs-84--pseudo-mercator">Set coordinate reference system (CRS) to WGS 84 / Pseudo-Mercator</h3>
+</span></span><span class="line"><span class="cl"><span class="n">db</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">db</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                            <span class="n">geometry</span><span class="o">=</span><span class="n">geopandas</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">long</span><span class="p">,</span> <span class="n">db</span><span class="o">.</span><span class="n">lat</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                            <span class="n">crs</span><span class="o">=</span><span class="s2">&#34;epsg:4326&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><h3 id="set-coordinate-reference-system-to-wgs-84">Set coordinate reference system to WGS 84</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">db</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">3857</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">db</span><span class="p">[</span><span class="s1">&#39;long&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">db</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
-</span></span></code></pre></div><h3 id="read-in-weapon-prohibition-zone-bounding-coordinates">Read in weapon prohibition zone bounding coordinates</h3>
+</span></span></code></pre></div><h3 id="read-in-wpz-bounding-coordinates">Read in WPZ bounding coordinates</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Daten/WVZ_Eckpunkte.csv&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">wvz_polygon</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="n">geopandas</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">wvz_polygon</span><span class="o">.</span><span class="n">lon</span><span class="p">,</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">lat</span><span class="p">),</span> <span class="n">crs</span><span class="o">=</span><span class="s2">&#34;epsg:4326&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">geopandas</span><span class="o">.</span><span class="n">GeoDataFrame</span><span class="p">(</span><span class="n">wvz_polygon</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                                     <span class="n">geometry</span><span class="o">=</span><span class="n">geopandas</span><span class="o">.</span><span class="n">points_from_xy</span><span class="p">(</span><span class="n">wvz_polygon</span><span class="o">.</span><span class="n">lon</span><span class="p">,</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">lat</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                                     <span class="n">crs</span><span class="o">=</span><span class="s2">&#34;epsg:4326&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">to_crs</span><span class="p">(</span><span class="n">epsg</span><span class="o">=</span><span class="mi">3857</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">wvz_polygon</span><span class="o">.</span><span class="n">geometry</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">y</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">wvz_polygon</span> <span class="o">=</span> <span class="n">wvz_polygon</span><span class="p">[[</span><span class="s1">&#39;lon&#39;</span><span class="p">,</span> <span class="s1">&#39;lat&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_numpy</span><span class="p">()</span>
-</span></span></code></pre></div><h2 id="1-density-based-analysis">(1) Density based analysis</h2>
+</span></span></code></pre></div><h2 id="density-based-analysis">Density Based Analysis</h2>
 <h3 id="total-police-recorded-crimes">Total police-recorded crimes</h3>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">db</span><span class="o">.</span><span class="n">date</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">db</span><span class="o">.</span><span class="n">date</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">db</span><span class="p">[</span><span class="s2">&#34;year&#34;</span><span class="p">]</span> <span class="o">=</span> <span class="n">db</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
@@ -867,6 +871,7 @@ Name: pks_crime, dtype: int64
 </span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db</span><span class="p">[</span><span class="n">db</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;before wpz&#39;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Before WPZ implementation&#34;</span><span class="p">,</span>
@@ -930,6 +935,7 @@ Name: pks_crime, dtype: int64
 </span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db_violence</span><span class="p">[</span><span class="n">db_violence</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;before wpz&#39;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Before WPZ implementation&#34;</span><span class="p">,</span>
@@ -975,6 +981,7 @@ Name: pks_crime, dtype: int64
 </span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </span></span><span class="line"><span class="cl"><span class="n">plot_geodensity</span><span class="p">(</span><span class="n">db_theft</span><span class="p">[</span><span class="n">db_theft</span><span class="o">.</span><span class="n">wvz</span> <span class="o">==</span> <span class="s1">&#39;before wpz&#39;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">                <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Before WPZ implementation&#34;</span><span class="p">,</span>
@@ -1011,7 +1018,7 @@ Name: pks_crime, dtype: int64
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<h2 id="2-hotspot-analysis-using-morans-i-cluster-maps">(2) Hotspot analysis using Morans I cluster maps</h2>
+<h2 id="hotspot-analysis-using-morans-i-cluster-maps">Hotspot Analysis using Morans I Cluster Maps</h2>
 <h3 id="preparations">Preparations</h3>
 <h4 id="create-hexagonal-grid-overlay">Create hexagonal grid overlay</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">grid_data</span> <span class="o">=</span> <span class="n">create_grid</span><span class="p">(</span><span class="n">feature</span><span class="o">=</span><span class="n">db</span><span class="p">,</span>
@@ -1030,7 +1037,7 @@ Name: pks_crime, dtype: int64
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&#34;C:/Program Files/R/R-4.2.2/bin/Rscript&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;E:/Documents/Publikationen/Work-in-Progress/Anschlussforschung WZV/Datenanalyse/Skripte/R_02_Export_Hotspot_Analysis.R&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Skripte/R_02_Export_Hotspot_Analysis.R&#34;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">                <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span></span></code></pre></div><h4 id="load-processed-data">Load processed data</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">hotspots_data_names</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s2">&#34;Daten/02_Hotspots_final&#34;</span><span class="p">)</span> <span class="k">if</span> <span class="s2">&#34;.shp&#34;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
@@ -1045,17 +1052,30 @@ Name: pks_crime, dtype: int64
 </span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
 </span></span></code></pre></div><p>
 
 
@@ -1093,17 +1113,30 @@ Name: pks_crime, dtype: int64
 </span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">8</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">10</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">11</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
 </span></span></code></pre></div><p>
 
 
@@ -1141,17 +1174,30 @@ Name: pks_crime, dtype: int64
 </span></span><span class="line"><span class="cl">             <span class="n">horizontalalignment</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span>
 </span></span><span class="line"><span class="cl">             <span class="n">verticalalignment</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">gs</span> <span class="o">=</span> <span class="n">gridspec</span><span class="o">.</span><span class="n">GridSpec</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figure</span><span class="o">=</span><span class="n">fig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_1</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;6-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_2</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;12-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_3</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;18-month comparison&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">ax_4</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="n">gs</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">plot_hotspot</span><span class="p">(</span><span class="n">hotspot_data</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">show_legend</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">column</span><span class="o">=</span><span class="s2">&#34;c_vals&#34;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">             <span class="n">title</span><span class="o">=</span><span class="s2">&#34;24-month comparison&#34;</span><span class="p">)</span>
 </span></span></code></pre></div><p>
 
 
@@ -1180,7 +1226,7 @@ Name: pks_crime, dtype: int64
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<h2 id="3-trend-analysis-of-hotspots">(3) Trend Analysis of Hotspots</h2>
+<h2 id="trend-analysis-of-hotspot-and-coldspots">Trend Analysis of Hotspot and Coldspots</h2>
 <h3 id="preparations-1">Preparations</h3>
 <h4 id="export-grid-data-and-run-r-script-to-calculate-morans-local-i-monthly">Export grid data and run R script to calculate Morans Local I (monthly)</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">before_month</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s2">&#34;2016-11-05&#34;</span><span class="p">,</span> <span class="s2">&#34;2018-11-05&#34;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -1198,12 +1244,12 @@ Name: pks_crime, dtype: int64
 </span></span><span class="line"><span class="cl">                <span class="n">folder</span><span class="o">=</span><span class="s2">&#34;03_Hotspots_month_raw&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">subprocess</span><span class="o">.</span><span class="n">call</span><span class="p">([</span><span class="s2">&#34;C:/Program Files/R/R-4.2.2/bin/Rscript&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">                <span class="s2">&#34;E:/Documents/Publikationen/Work-in-Progress/Anschlussforschung WZV/Datenanalyse/Skripte/R_03_Export_Hotspot_Month_Analysis.R&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;Skripte/R_03_Export_Hotspot_Month_Analysis.R&#34;</span><span class="p">],</span>
 </span></span><span class="line"><span class="cl">                <span class="n">shell</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </span></span></code></pre></div><h4 id="load-processed-data-1">Load processed data</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">hotspots_data_names_month</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="s2">&#34;Daten/04_Hotspots_month_final&#34;</span><span class="p">)</span> <span class="k">if</span> <span class="s2">&#34;.csv&#34;</span> <span class="ow">in</span> <span class="n">x</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl"><span class="n">hotspots_data_month</span> <span class="o">=</span> <span class="p">[</span><span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&#34;Daten/04_Hotspots_month_final/&#34;</span> <span class="o">+</span> <span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">hotspots_data_names_month</span><span class="p">]</span>
-</span></span></code></pre></div><h3 id="monthly-trend-analysis-of-hot--and-coldspots">Monthly Trend Analysis of Hot- and Coldspots</h3>
+</span></span></code></pre></div><h3 id="monthly-trend-analysis">Monthly Trend Analysis</h3>
 <h4 id="total-police-recored-crimes-1">Total police-recored crimes</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">hotspots_data_month</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">&#34;month&#34;</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&#34;cluster_group&#34;</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&#34;ratio_roll&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">plot_trend</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Trend Analysis of Total Police-Recored Crimes&#34;</span><span class="p">)</span>
@@ -1297,7 +1343,7 @@ Name: pks_crime, dtype: int64
                loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<h2 id="4-key-findings">(4) Key findings</h2>
+<h2 id="key-findings">Key Findings</h2>
 <h4 id="1-crime-displacement-took-place">1. Crime displacement took place</h4>
 <ul>
 <li>This is true for the total of police-recorded crimes as well as violence and theft</li>
