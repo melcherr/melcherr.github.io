@@ -5,12 +5,20 @@
     <link>https://melcherr.github.io/publication/</link>
       <atom:link href="https://melcherr.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications &amp; Data</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://melcherr.github.io/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_512x512_fill_lanczos_center_3.png</url>
       <title>Publications &amp; Data</title>
       <link>https://melcherr.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Attitudes Towards the Corona Crisis in the Police Force</title>
+      <link>https://melcherr.github.io/publication/meisselbach-2023/</link>
+      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/publication/meisselbach-2023/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>(In-)Consistent voting in the 2009, 2013 and 2017 German federal elections</title>
