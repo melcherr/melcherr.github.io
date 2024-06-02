@@ -2,15 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://melcherr.github.io/project/pmk_vote/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://melcherr.github.io/project/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://melcherr.github.io/cv/</loc>
     <lastmod>2023-01-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://melcherr.github.io/project/wvz/</loc>
-    <lastmod>2023-01-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://melcherr.github.io/project/</loc>
     <lastmod>2023-01-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

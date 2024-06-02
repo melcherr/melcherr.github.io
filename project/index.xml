@@ -5,12 +5,21 @@
     <link>https://melcherr.github.io/project/</link>
       <atom:link href="https://melcherr.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Research Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 14 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://melcherr.github.io/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_512x512_fill_lanczos_center_3.png</url>
       <title>Research Projects</title>
       <link>https://melcherr.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>Politische Kriminalitätsfurcht und Wahlverhalten: Wie die Sorge vor Extremismus und Issue-Ownership die Wahlabsicht prägen</title>
+      <link>https://melcherr.github.io/project/pmk_vote/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/project/pmk_vote/</guid>
+      <description>&lt;p&gt;Im Beitrag wird der Frage nachgegangen, wie sich die politische Kriminalitätsfurcht im Zusammenspiel mit der wahrgenommenen Bedrohung durch linken und rechten politischen Extremismus auf das Wahlverhalten bzw. die Wahlabsicht auswirkt. Dabei geht es vor allem darum, welche Rolle dabei die Kompetenzzuschreibung („issue-ownership“) einzelner Parteien dabei. Einerseits wäre nämlich zu vermuten, dass es sich bei Extremismus und PMK um sogenannte „Valenzissues“ handelt, über dessen Ziel – den Schutz der Demokratie – parteiübergreifend Einigung besteht. Wenn dem so ist, dann dürften von erhöhter politischer Kriminalitätsfurcht vor allem moderate Parteien der politischen Mitte profitieren. Handelt es sich bei Extremismus dagegen um ein „Positionsissue“, das in der Parteienlandschaft entlang von grundlegenden ideologischen Differenzen deutlich umstritten ist, dann sollten von erhöhter Sorge vor Rechts- bzw. Linksextremismus jeweils die Parteien des entgegengesetzten politischen Lagers profitieren. Um diese Fragen zu beantworten, werden im ersten Schritt das theoretische Argument unter Rückgriff auf salienztheoretische Annahmen themenorientierten und ökonomischen Wählens expliziert und davon ausgehend testbare Hypothesen abgleitet. Unter Rückgriff auf den PaWaKS-Datensatz des Zentrums für kriminologische Forschung Sachsen (ZKFS) werden die Hypothesen im empirischen Teil operationalisiert und mittels multinomialer Mehrebenenmodelle und bayesianischen Schätzverfahren getestet. Wie sich zeigen wird, beeinflusst politische Kriminalitätsfurcht das Wahlverhalten der Bürgerinnen und Bürger. Allerdings scheint es nicht so zu sein, dass die Sorge vor einer Bedrohung der Demokratie durch Extremismus bzw. PMK dazu führt, dass Menschen eher Parteien der politischen Mitte unterstützen. Stattdessen profitieren von der Sorge vor Rechtsextremismus und rechter PMK tendenziell linke Parteien, während eine entsprechende Bedrohungswahrnehmung im Hinblick auf den Linksextremismus eher konservativen bzw. rechten Parteien nützt. Verändert sich die intraindividuelle Wahrnehmung der Zunahme linker PMK über Zeit, kommt allerdings eher SPD stärkere Unterstützung zu, wohingegen bei rechter PMK für die Grünen oder Nichtwahl oder Unentschlossenheit optiert werden würde.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>&#34;Then they simply go somewhere else...&#34;: An Exploratory Study of Crime Displacement in a German Context</title>
