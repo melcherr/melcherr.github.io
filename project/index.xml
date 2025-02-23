@@ -5,12 +5,30 @@
     <link>https://melcherr.github.io/project/</link>
       <atom:link href="https://melcherr.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Research Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://melcherr.github.io/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_512x512_fill_lanczos_center_3.png</url>
       <title>Research Projects</title>
       <link>https://melcherr.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>&#34;Then they simply go somewhere else...&#34;: An Exploratory Study of Crime Displacement in a German Context</title>
+      <link>https://melcherr.github.io/project/wvz/</link>
+      <pubDate>Tue, 14 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/project/wvz/</guid>
+      <description>&lt;p&gt;Findings from a study (Mühler et al. 2022) on a weapon prohibition zone established on November 5, 2018, in Leipzig, Germany, indicate a decrease in crime rates within the zone. This paper asks whether the reduction is partially caused by displacement into surrounding areas or an actual reduction in crime. Drawing on perspectives of rational choice and routine activity theory, we expect to see that crime should have contemporaneously increased in adjoining districts because offenders commonly search for opportunities close to their everyday life. We assume furthermore that not every type of criminal offense is equally prone to displacement since different crimes can vary in their cost and utility structure. Based on police-recorded crime data from 2016 to 2020, we put these theoretical assumptions to an empirical test using methods of spatial point-pattern analysis. Firstly, we use kernel density estimations to map spatiotemporal crime patterns and their shifts in the districts of Volkmarsdorf and Neustadt-Neuschönefeld before and after the implementation of the weapon prohibition zone. Secondly, to trace spatial crime displacement on a more fine-grained level, we calculate centrography statistics such as central tendency and dispersion for different periods between 2016 and 2020. Geospatial analyses are carried out not only for the total of police-recorded crimes but also for various offenses. The findings suggest that shortly after the weapon prohibition zone was implemented the center of criminal activity did indeed shift to areas closer to the zone boundaries, while new centers outside the zone began to emerge. This pattern is particularly pronounced for petty and grand theft. Our results yield novel insights into the unintended consequences of implementing weapon prohibition zones to reduce local crime rates and may inform future policy decisions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Geographical Proximity and Cultural Closeness in Europe</title>
+      <link>https://melcherr.github.io/project/distance/</link>
+      <pubDate>Sun, 12 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/project/distance/</guid>
+      <description>&lt;p&gt;This paper addresses the important question of cultural closeness (or distance) between subnational regions in and aims to understand why certain regions are culturally closer than others. It makes a contribution by adapting the contact hypothesis to the phenomenon of cultural closeness and exemplifying a mechanism called &lt;em&gt;cultural blending&lt;/em&gt;. It argues that a high of contact between regions leads to cultural blending. Accordingly, interregional distance is assumed to be influenced by interregional contact frequency. We operationalize contact frequency by means of geographical proximity and culture via the value instrument developed by Shalom Schwartz. Using data drawn from the European Social Survey (2002&amp;ndash;2018) and Eurostat dyadic regressions on the NUTS-II-level are conducted. Findings show that the geographical distance between subnational regions is undoubtedly associated with interregional cultural distances.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Politische Kriminalitätsfurcht und Wahlverhalten: Wie die Sorge vor Extremismus und Issue-Ownership die Wahlabsicht prägen</title>
@@ -20,24 +38,6 @@
       <description>&lt;p&gt;Im Beitrag wird der Frage nachgegangen, inwiefern politische Kriminalitätsfurcht – verstanden als die Sorge vor Extremismus und politisch motivierter Kriminalität – das Wahlverhalten beeinflusst. Konkret wird untersucht, ob es sich bei der Bekämpfung von politischer Kriminalität und Extremismus eher um ein Politikfeld handelt, für das moderaten demokratischen Parteien eine besondere Kompetenz zugeschrieben wird (»Valenzissue«), oder ob das Themenfeld unter ideologischen Widersachern politisch deutlich umstritten ist (»Positionsissue«). Die Frage wird empirisch auf der Grundlage des PaWaKS-Datensatzes untersucht, der es ermöglicht, sowohl intra- als auch interindividuelle Veränderungen über die Zeit hinweg zu analysieren. Dies geschieht durch den Einsatz multinomialer Mehrebenenmodelle und bayesianischer Schätzverfahren. Auf dieser Grundlage wird untersucht, wie die Wahlabsicht durch die wahrgenommene Entwicklung politisch motivierter Straftaten sowie durch die Sorge vor Extremismus beeinflusst wird. Es wird gezeigt, dass eine erhöhte politische Kriminalitätsfurcht die Wahrscheinlichkeit, Parteien der politischen Mitte zu wählen, nicht bedeutsam erhöht. Stattdessen verstärkt die Sorge vor Rechtsextremismus die Neigung, Parteien des linken Spektrums zu unterstützen, während die Sorge vor Linksextremismus eine Wahlabsicht zugunsten rechter Parteien wahrscheinlicher macht. Ausweislich dieser Befunde ist der Abwehr kampf gegen Extremismus offenbar ein Positionsissue, das weitgehend in ideologischen Konfliktlinien verhaftet bleibt. Politische Kriminalitätsfurcht ist mithin nicht exogen, sondern wird anscheinend selbst von bestehenden politischen Überzeugungen beeinflusst.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;strong&gt;Publication:&lt;/strong&gt;&lt;/strong&gt; &lt;/br&gt;
 In: Deliah Wagner, Jennifer L. Führer und Frank Asbrock (Hg.): Von Kriminalitätsfurcht zu Feindseligkeit. Baden-Baden: Nomos, pp. 133-168&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>&#34;Then they simply go somewhere else...&#34;: An Exploratory Study of Crime Displacement in a German Context</title>
-      <link>https://melcherr.github.io/project/wvz/</link>
-      <pubDate>Sat, 14 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://melcherr.github.io/project/wvz/</guid>
-      <description>&lt;p&gt;Findings from a study (Mühler et al. 2022) on a weapon prohibition zone established on November 5, 2018, in Leipzig, Germany, indicate a decrease in crime rates within the zone. This paper asks whether the reduction is partially caused by displacement into surrounding areas or an actual reduction in crime. Drawing on perspectives of rational choice and routine activity theory, we expect to see that crime should have contemporaneously increased in adjoining districts because offenders commonly search for opportunities close to their everyday life. We assume furthermore that not every type of criminal offense is equally prone to displacement since different crimes can vary in their cost and utility structure. Based on police-recorded crime data from 2016 to 2020, we put these theoretical assumptions to an empirical test using methods of spatial point-pattern analysis. Firstly, we use kernel density estimations to map spatiotemporal crime patterns and their shifts in the districts of Volkmarsdorf and Neustadt-Neuschönefeld before and after the implementation of the weapon prohibition zone. Secondly, to trace spatial crime displacement on a more fine-grained level, we calculate centrography statistics such as central tendency and dispersion for different periods between 2016 and 2020. Geospatial analyses are carried out not only for the total of police-recorded crimes but also for various offenses. The findings suggest that shortly after the weapon prohibition zone was implemented the center of criminal activity did indeed shift to areas closer to the zone boundaries, while new centers outside the zone began to emerge. This pattern is particularly pronounced for petty and grand theft. Our results yield novel insights into the unintended consequences of implementing weapon prohibition zones to reduce local crime rates and may inform future policy decisions.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Geographical Proximity and Cultural Closeness in Europe</title>
-      <link>https://melcherr.github.io/project/distance/</link>
-      <pubDate>Thu, 12 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://melcherr.github.io/project/distance/</guid>
-      <description>&lt;p&gt;This paper addresses the important question of cultural closeness (or distance) between subnational regions in and aims to understand why certain regions are culturally closer than others. It makes a contribution by adapting the contact hypothesis to the phenomenon of cultural closeness and exemplifying a mechanism called &lt;em&gt;cultural blending&lt;/em&gt;. It argues that a high of contact between regions leads to cultural blending. Accordingly, interregional distance is assumed to be influenced by interregional contact frequency. We operationalize contact frequency by means of geographical proximity and culture via the value instrument developed by Shalom Schwartz. Using data drawn from the European Social Survey (2002&amp;ndash;2018) and Eurostat dyadic regressions on the NUTS-II-level are conducted. Findings show that the geographical distance between subnational regions is undoubtedly associated with interregional cultural distances.&lt;/p&gt;
 </description>
     </item>
     
