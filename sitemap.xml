@@ -2,15 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://melcherr.github.io/publication-type/0/</loc>
-    <lastmod>2024-12-12T16:20:20+00:00</lastmod>
+    <loc>https://melcherr.github.io/publication-type/6/</loc>
+    <lastmod>2024-12-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://melcherr.github.io/publication/steinmetz-2024/</loc>
+    <lastmod>2024-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://melcherr.github.io/publication_types/</loc>
-    <lastmod>2024-12-12T16:20:20+00:00</lastmod>
+    <lastmod>2024-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://melcherr.github.io/publication/</loc>
+    <lastmod>2024-12-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://melcherr.github.io/publication-type/0/</loc>
     <lastmod>2024-12-12T16:20:20+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -20,10 +28,6 @@
   </url><url>
     <loc>https://melcherr.github.io/publication/melcher-2024-c/</loc>
     <lastmod>2024-12-12T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://melcherr.github.io/publication-type/6/</loc>
-    <lastmod>2024-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://melcherr.github.io/publication/melcher-2024/</loc>
