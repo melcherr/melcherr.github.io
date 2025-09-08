@@ -2,11 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://melcherr.github.io/project/wvz/</loc>
-    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
+    <loc>https://melcherr.github.io/project/</loc>
+    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://melcherr.github.io/project/</loc>
+    <loc>https://melcherr.github.io/project/look_safety/</loc>
+    <lastmod>2025-09-04T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://melcherr.github.io/project/krimfurcht_partizipation/</loc>
+    <lastmod>2025-09-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://melcherr.github.io/project/wvz/</loc>
     <lastmod>2025-01-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

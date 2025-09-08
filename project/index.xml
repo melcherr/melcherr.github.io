@@ -5,12 +5,30 @@
     <link>https://melcherr.github.io/project/</link>
       <atom:link href="https://melcherr.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Research Projects</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 14 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 04 Sep 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://melcherr.github.io/media/icon_hu6cd1932746c5fb08ab3b6a8012107b2c_2177878_512x512_fill_lanczos_center_3.png</url>
       <title>Research Projects</title>
       <link>https://melcherr.github.io/project/</link>
     </image>
+    
+    <item>
+      <title>The Look of Safety?</title>
+      <link>https://melcherr.github.io/project/look_safety/</link>
+      <pubDate>Thu, 04 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/project/look_safety/</guid>
+      <description>&lt;p&gt;How police appearance affects the feeling of safety and fear of crime remains an underexplored question. Only a handful of studies examine this relationship in depth (Dau et al., 2023, p. 210), and even fewer focus primarily on the role of police uniform style (Ariel et al., 2016), yielding rather inconclusive results. These studies rely almost exclusively on field experiments and randomized controlled trials. Although field experiments offer high external validity, their internal validity tends to be lower due to challenges in controlling for confounding variables and ensuring consistent experimental conditions. Laboratory and survey experiments provide a valuable complement to field studies; however, such approaches remain rare (van de Veer et al., 2012, p. 3116). This study presents the results of a vignette survey experiment conducted in April 2025 with approximately 1,000 participants from the German state of Saxony. Using photo vignettes depicting two police officers in different scenarios, respondents will assess their feeling of safety for each presented image (see Eifler &amp;amp; Petzold, 2022). The vignettes manipulate four situational dimensions: police uniform type (standard uniform with and without a protective vest, police coverall with a protective vest), gender composition of the police patrol (all-female, all-male, mixed-gender), lighting conditions (day, night), and physical incivilities and signs of decay in the environment (low, high), resulting in 36 unique vignette combinations. Each respondent evaluates four vignettes. The findings of this study will provide insights into how police appearance and situational context—individually and in combination—affect the feeling of safety. These results may contribute to evidence-based policing strategies aimed at enhancing public perceptions of security.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Führt Kriminalitätsfurcht zu politischer Abstinenz oder Mobilisierung?</title>
+      <link>https://melcherr.github.io/project/krimfurcht_partizipation/</link>
+      <pubDate>Mon, 01 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://melcherr.github.io/project/krimfurcht_partizipation/</guid>
+      <description>&lt;p&gt;Politische Partizipation ist eine zentrale Säule demokratischer Systeme. Obwohl ihre Einflussfaktoren bereits intensiv erforscht wurden, ist die Rolle der Kriminalitätsfurcht als potenzieller Treiber oder Hemmnis politischer Beteiligung bislang unzureichend untersucht. Der vorliegende Beitrag analysiert auf Basis der &lt;a href=&#34;https://melcherr.github.io/publication/melcher-2024-b/&#34;&gt;SKiSAX-Befragung&lt;/a&gt; den Zusammenhang zwischen Kriminalitätsfurcht und politischer Partizipation und unterscheidet dabei zwischen personaler Kriminalitätsfurcht (Furcht, selbst Opfer einer Straftat zu werden) und sozialer Kriminalitätsfurcht (Wahrnehmung der Kriminalitätsentwicklung als gesamtgesellschaftliches Problem). Mithilfe von Strukturgleichungsmodellen und Probit-Regressionen wird überprüft, wie sich diese Dimensionen der Kriminalitätsfurcht auf die Wahlbeteiligung und politische Proteste auswirken. Die Ergebnisse zeigen, dass personale Kriminalitätsfurcht zwar kaum Einfluss auf politische Partizipation hat, allerdings den Einfluss der sozioökonomischen Ressourcenausstattung auf die politische Beteiligung moderiert: Bei Unterprivilegierten wirkt personale Kriminalitätsfurcht hemmend, bei Privilegierten hingegen nicht. Soziale Kriminalitätsfurcht wirkt sich dagegen zwar nur schwach auf die Wahlbeteiligung aus, verringert jedoch die diffuse Unterstützung des politischen Systems und erhöht dadurch die Protestneigung. Diese Befunde bergen weitreichende demokratietheoretische Implikationen und tragen zu einem vertieften Verständnis der Zusammenhänge zwischen Sicherheitsgefühl, sozialer Ungleichheit und politischer Beteiligung bei.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>&#34;Then they simply go somewhere else...&#34;: An Exploratory Study of Crime Displacement in a German Context</title>
